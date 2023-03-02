@@ -1,34 +1,25 @@
-.container {
-  border: 1px solid rgb(146, 126, 126);
-  border-radius: 3px;
-}
-.preview {
-  border: 1px solid rgb(156, 139, 139);
+.edit{
+  border: 1px solid ;
   border-radius: 2px;
-  padding-top: 5px;
+  background-color: rgb(201, 211, 219);
+  font-style: italic ;
+  font-family: sans-serif ;
 }
-.checkboxes {
-  padding: 2px;
-  border: 1px solid rgb(200, 206, 149);
+.hello{
+  padding: 1px;
+
 }
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: #ff0707;
+input{
+  box-shadow: 2px 1px 1px rgb(148, 142, 142);
 }
-.hover-underline-animation:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(3);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+option{
+  box-shadow: 2px 1px 1px grey;
 }
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+label{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
 }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
