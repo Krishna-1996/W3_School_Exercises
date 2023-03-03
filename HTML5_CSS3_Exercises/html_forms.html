@@ -25,15 +25,34 @@
       #name {
         background-color: rgb(235, 5, 5);
       }
+      
+      .req{
+        color: rgb(255, 0, 0);
+      }
+      .submit{
+        align-items: center;
+      }
+      .form{
+        align-items: center;
+        padding: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;
+
+      }
+      fieldset{
+        border-color: blue;
+        border-radius: 10px;
+        border-style: double;
+      }
     </style>
   </head>
   <body>
-    <form action="/" method="post">
+    <form action="https://drive.google.com/drive/u/0/folders/1ugZEoxZQUvTm2dp8lOX5Lpe9nAzU8UJH" method="get">
       <label class="new" for="name">FULL NAME:*</label><br />
-      <input type="text" id="name" placeholder="first name" />
-      <input type="text" id="name" placeholder="last name" /> <br />
+      <input type="text" id="name" placeholder="first name" required/>
+      <input type="text" id="name" placeholder="last name" required /> <br />
       <label for="email">E-MAIL:*</label><br />
-      <input type="email" id="email" placeholder="email" /><br />
+      <input type="email" id="email" placeholder="email" required/><br />
       <label for="subject">SUBJECT</label><br />
       <select class="clr" name="subject" id="subject">
         <option value="advertise">advertise</option>
@@ -52,6 +71,30 @@
       ><br />
       <button type="submit">SUBMIT</button>
       <button type="reset">RESET</button>
+
+    </form>
+    <br><br><br><br><br><br><br><br><br><br>
+    <form class= "form" action="/" method="post">
+       <fieldset ><legend>Personal</legend>
+        <label for="name" ><span>NAME<span class="req">*</span></span>
+        <input type="text" placeholder="Full Name"></label><br>
+        <label for="email" ><span>EMAIL<span class="req">*</span></span>
+        <input type="email" placeholder="E-MAIL"></label><br>
+        <label for="number" name="phone" placeholder="Enter your Phone number"  ></label> 
+        <select name="option" id="select">
+            <option value="appointment">Appointment</option>
+            <option value="Personal">Appointment</option>
+            <option value="meeting">Meeting</option>
+            <option value="aggrement">Aggrement</option>
+        </select>
+        
+       </fieldset> 
+       <fieldset>
+        <legend>Message</legend>
+        <textarea name="msg" id="msg" cols=" 70 " rows="10" placeholder="Type your Message here:"></textarea><br><br>
+        <button type="submit" class="submit">SUBMIT</button>
+    </fieldset>
+       
     </form>
   </body>
 </html>
